@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: "Roboto", sans-serif;
+  --text-color: #e1e1e6;
+  --theader-bg: #092d38;
+  --tbody-bg1: #06181c;
+  --tbody-bg2: rgba(6, 22, 27, 0.5);
+  --btn-bg: #065e7c;
+}
+
+body {
+  background-color: #000000;
+  color: var(--text-color);
+  font-size: 1.6rem;
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 115px;
+}
+
+header button {
+  background-color: var(--btn-bg);
+}
+
+.githubSeach {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.githubSeach input {
+  height: 4.8rem;
+
+  padding: 16px;
+
+  min-width: 462px;
+  width: 100%;
+
+  background: #06181c;
+  color: var(--text-color);
+
+  border: none;
+  border-radius: 5px;
+}
+
+.githubSeach button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px 32px;
+  gap: 8px;
+
+  background: #065e7c;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  transition: 400ms;
+}
+
+.githubSeach span {
+  font-size: 24px;
+}
+
+.githubSeach button:hover {
+  background: #024a63;
+}
+
+table {
+  width: 100%;
+  margin-top: 87px;
+
+  border-collapse: collapse;
+
+  border: 1px solid #4a808c;
+
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table * {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+table th {
+  background-color: var(--theader-bg);
+  text-align: left;
+  font-weight: normal;
+  padding: 1.5rem 4rem;
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--tbody-bg2);
+}
+
+table tr {
+  background-color: var(--tbody-bg1);
+}
+
+table td {
+  padding: 1.5rem 4rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+
+  color: #e1e1e6;
+  text-decoration: none;
+}
+
+.user a span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+
+  display: flex;
+  align-items: center;
+
+  color: #e1e1e6;
+}
+.repositorios,
+.followers {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+
+  color: #e1e1e6;
+}
+
+td button {
+  background-color: transparent;
+
+  border: none;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+
+  display: flex;
+  align-items: center;
+
+  color: #f75a68;
+
+  cursor: pointer;
+}
